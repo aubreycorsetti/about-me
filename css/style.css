@@ -1,0 +1,74 @@
+body {
+
+    background-color: darkkhaki;
+    border: 5px solid black;
+
+}
+
+h1 {
+
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: "lucida" sans;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header {
+
+    height: 150px;
+    background-color: rgba(169, 169, 169, 0.472);
+}
+
+img {
+    float: center;
+    width: 50rem;
+    align-items: center;
+    border-radius: 25%;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.p1 {
+    font-size: 18px;
+    text-align: center;
+    border: 4px solid black;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.p2 {
+    font-size: 18px;
+    text-align: center;
+    border: 4px solid black;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
