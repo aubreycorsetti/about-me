@@ -18,6 +18,12 @@ h1 {
     padding-right: 25px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
 header {
 
     height: 150px;
