@@ -1,5 +1,8 @@
 'use strict';
 
+let score = 0;
+score++;
+
 console.log('Hello');
 
 let booleanValue = true;
@@ -28,8 +31,9 @@ let cookingResposeLower = likesCooking.toLowerCase();
 if (cookingResposeLower === 'yes' || cookingResposeLower === 'y') {
   console.log('Yes, I LOOOOVE cooking! It is my love language!');
   alert('Yes, I LOOOOVE cooking! It is my love language!');
+  score++;
 }
-else if (cookingResposeLower === 'no' || cookingResposeLower === 'n'){
+else if (cookingResposeLower === 'no' || cookingResposeLower === 'n') {
   console.log('That is incorrect');
   alert('No that is incorrect.');
 }
@@ -42,8 +46,9 @@ let likesArchery = likesCompeting.toLowerCase();
 if (likesArchery === 'yes' || likesArchery === 'y') {
   //console.log('Yes, I have been shooting a bow since I was 5!');
   alert('Yes, I have been shooting a bow since I was 5!');
+  score++;
 }
-else if (likesArchery === 'no' || likesArchery === 'n'){
+else if (likesArchery === 'no' || likesArchery === 'n') {
   //console.log('That is incorrect');
   alert('No that is incorrect.');
 }
@@ -57,8 +62,9 @@ let likesMoving = likesStates.toLowerCase();
 if (likesMoving === 'yes' || likesMoving === 'y') {
   //console.log('Yes, I would live 6 months in Seattle then go 6 months to Montana');
   alert('Yes, I would live 6 months in Seattle then go 6 months to Montana');
+  score++;
 }
-else if (likesMoving === 'no' || likesMoving === 'n'){
+else if (likesMoving === 'no' || likesMoving === 'n') {
   //console.log('That is incorrect');
   alert('No that is incorrect.');
 }
@@ -71,8 +77,9 @@ let likesLuggage = likesDesign.toLowerCase();
 if (likesLuggage === 'yes' || likesLuggage === 'y') {
   //console.log('Yes, I am currently working on getting a prototype.');
   alert('Yes, I am');
+  score++;
 }
-else if (likesLuggage === 'no' || likesLuggage === 'n'){
+else if (likesLuggage === 'no' || likesLuggage === 'n') {
   //console.log('That is incorrect');
   alert('No that is incorrect.');
 }
@@ -85,8 +92,58 @@ let likesHeritage = likesFamily.toLowerCase();
 if (likesHeritage === 'yes' || likesHeritage === 'y') {
   //console.log('Yes, My Oma is from holland on my moms side. My Nonna is from Italy on my fathers side.');
   alert('Yes, I am');
+  score++;
 }
-else if (likesHeritage === 'no' || likesHeritage === 'n'){
+else if (likesHeritage === 'no' || likesHeritage === 'n') {
   //console.log('That is incorrect');
   alert('No that is incorrect.');
 }
+
+let myFavColors = ['blue', 'gold', 'black', 'red'];
+
+let attemptsRemaining = 7;
+
+while (attemptsRemaining) {
+  let userGuess = prompt('What\'s my favorite color?');
+  attemptsRemaining--;
+  for (let i = 0; i < myFavColors.length; i++) {
+    if (userGuess === myFavColors[i]) {
+      alert('You are correct. The correct possible answers are blue, gold, black and red.');
+      score++;
+      attemptsRemaining = 0;
+    }
+  }
+  if (attemptsRemaining) {
+    alert(`You have ${attemptsRemaining} attempts remaining.`);
+  }
+}
+console.log('score ', score);
+
+let myNumber = '8';
+
+let numberAttempts = 4;
+
+let guessCorrect = false;
+
+while (numberAttempts) {
+  let numberGuess = prompt('What\'s my favorite number? 1-10');
+  numberAttempts--;
+
+  if (numberGuess < myNumber) {
+    alert('Too low. Try Again');
+  }
+  else if (numberGuess > myNumber) {
+    alert('Too high. Try again.');
+
+  }
+  else if (numberGuess === myNumber) {
+    alert('You are correct!');
+    score++;
+    numberAttempts = 0;
+    guessCorrect = true;
+  }
+  if (numberAttempts === 0 && !guessCorrect) {
+    alert('The correct answer was ' + myNumber + '!');
+  }
+}
+alert('You scored ' + score);
