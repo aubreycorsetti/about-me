@@ -23,13 +23,13 @@ let userName = prompt('What is your name?');
 console.log(userName);
 alert('Hello ' + userName + '!');
 
-function cooking(){
+function cooking() {
 
   let likesCooking = prompt('Do I like to cook?');
   console.log(likesCooking);
-  
+
   let cookingResposeLower = likesCooking.toLowerCase();
-  
+
   if (cookingResposeLower === 'yes' || cookingResposeLower === 'y') {
     console.log('Yes, I LOOOOVE cooking! It is my love language!');
     alert('Yes, I LOOOOVE cooking! It is my love language!');
@@ -43,12 +43,12 @@ function cooking(){
 
 cooking();
 
-function archery(){
+function archery() {
   let likesCompeting = prompt('Did I compete in Archery?');
   console.log(likesCompeting);
-  
+
   let likesArchery = likesCompeting.toLowerCase();
-  
+
   if (likesArchery === 'yes' || likesArchery === 'y') {
     //console.log('Yes, I have been shooting a bow since I was 5!');
     alert('Yes, I have been shooting a bow since I was 5!');
@@ -60,24 +60,28 @@ function archery(){
   }
 }
 
-archery ();
+archery();
 
+function states() {
+  let likesStates = prompt('Did I grow up in multiple states?');
+  console.log(likesStates);
 
+  let likesMoving = likesStates.toLowerCase();
 
-let likesStates = prompt('Did I grow up in multiple states?');
-console.log(likesStates);
-
-let likesMoving = likesStates.toLowerCase();
-
-if (likesMoving === 'yes' || likesMoving === 'y') {
-  //console.log('Yes, I would live 6 months in Seattle then go 6 months to Montana');
-  alert('Yes, I would live 6 months in Seattle then go 6 months to Montana');
-  score++;
+  if (likesMoving === 'yes' || likesMoving === 'y') {
+    //console.log('Yes, I would live 6 months in Seattle then go 6 months to Montana');
+    alert('Yes, I would live 6 months in Seattle then go 6 months to Montana');
+    score++;
+  }
+  else if (likesMoving === 'no' || likesMoving === 'n') {
+    //console.log('That is incorrect');
+    alert('No that is incorrect.');
+  }
 }
-else if (likesMoving === 'no' || likesMoving === 'n') {
-  //console.log('That is incorrect');
-  alert('No that is incorrect.');
-}
+
+states();
+
+
 
 let likesDesign = prompt('Am I designing a luggage line?');
 console.log(likesDesign);
