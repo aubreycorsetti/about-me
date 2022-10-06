@@ -43,21 +43,25 @@ function cooking(){
 
 cooking();
 
-
-let likesCompeting = prompt('Did I compete in Archery?');
-console.log(likesCompeting);
-
-let likesArchery = likesCompeting.toLowerCase();
-
-if (likesArchery === 'yes' || likesArchery === 'y') {
-  //console.log('Yes, I have been shooting a bow since I was 5!');
-  alert('Yes, I have been shooting a bow since I was 5!');
-  score++;
+function archery(){
+  let likesCompeting = prompt('Did I compete in Archery?');
+  console.log(likesCompeting);
+  
+  let likesArchery = likesCompeting.toLowerCase();
+  
+  if (likesArchery === 'yes' || likesArchery === 'y') {
+    //console.log('Yes, I have been shooting a bow since I was 5!');
+    alert('Yes, I have been shooting a bow since I was 5!');
+    score++;
+  }
+  else if (likesArchery === 'no' || likesArchery === 'n') {
+    //console.log('That is incorrect');
+    alert('No that is incorrect.');
+  }
 }
-else if (likesArchery === 'no' || likesArchery === 'n') {
-  //console.log('That is incorrect');
-  alert('No that is incorrect.');
-}
+
+archery ();
+
 
 
 let likesStates = prompt('Did I grow up in multiple states?');
