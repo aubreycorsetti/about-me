@@ -81,22 +81,27 @@ function states() {
 
 states();
 
+function luggage() {
+  let likesDesign = prompt('Am I designing a luggage line?');
+  console.log(likesDesign);
 
+  let likesLuggage = likesDesign.toLowerCase();
 
-let likesDesign = prompt('Am I designing a luggage line?');
-console.log(likesDesign);
+  if (likesLuggage === 'yes' || likesLuggage === 'y') {
+    //console.log('Yes, I am currently working on getting a prototype.');
+    alert('Yes, I am currently working on getting a proto-type made.');
+    score++;
+  }
+  else if (likesLuggage === 'no' || likesLuggage === 'n') {
+    //console.log('That is incorrect');
+    alert('No that is incorrect.');
 
-let likesLuggage = likesDesign.toLowerCase();
-
-if (likesLuggage === 'yes' || likesLuggage === 'y') {
-  //console.log('Yes, I am currently working on getting a prototype.');
-  alert('Yes, I am currently working on getting a proto-type made.');
-  score++;
+  }
 }
-else if (likesLuggage === 'no' || likesLuggage === 'n') {
-  //console.log('That is incorrect');
-  alert('No that is incorrect.');
-}
+
+luggage();
+
+
 
 let likesFamily = prompt('Am I the second generation born in the US from my family?');
 console.log(likesFamily);
