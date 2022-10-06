@@ -147,32 +147,37 @@ color();
 
 // console.log('score ', score);
 
+function number() {
 
-let myNumber = '8';
+  let myNumber = '8';
 
-let numberAttempts = 4;
+  let numberAttempts = 4;
 
-let guessCorrect = false;
+  let guessCorrect = false;
 
-while (numberAttempts) {
-  let numberGuess = prompt('What\'s my favorite number? 1-10');
-  numberAttempts--;
+  while (numberAttempts) {
+    let numberGuess = prompt('What\'s my favorite number? 1-10');
+    numberAttempts--;
 
-  if (numberGuess < myNumber) {
-    alert('Too low. Try Again');
-  }
-  else if (numberGuess > myNumber) {
-    alert('Too high. Try again.');
+    if (numberGuess < myNumber) {
+      alert('Too low. Try Again');
+    }
+    else if (numberGuess > myNumber) {
+      alert('Too high. Try again.');
 
-  }
-  else if (numberGuess === myNumber) {
-    alert('You are correct!');
-    score++;
-    numberAttempts = 0;
-    guessCorrect = true;
-  }
-  if (numberAttempts === 0 && !guessCorrect) {
-    alert('The correct answer was ' + myNumber + '!');
+    }
+    else if (numberGuess === myNumber) {
+      alert('You are correct!');
+      score++;
+      numberAttempts = 0;
+      guessCorrect = true;
+    }
+    if (numberAttempts === 0 && !guessCorrect) {
+      alert('The correct answer was ' + myNumber + '!');
+    }
   }
 }
+
+number();
+
 alert('You scored ' + score);
