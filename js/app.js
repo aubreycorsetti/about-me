@@ -101,22 +101,28 @@ function luggage() {
 
 luggage();
 
+function family() {
 
+  let likesFamily = prompt('Am I the second generation born in the US from my family?');
+  console.log(likesFamily);
 
-let likesFamily = prompt('Am I the second generation born in the US from my family?');
-console.log(likesFamily);
+  let likesHeritage = likesFamily.toLowerCase();
 
-let likesHeritage = likesFamily.toLowerCase();
-
-if (likesHeritage === 'yes' || likesHeritage === 'y') {
-  //console.log('Yes, My Oma is from holland on my moms side. My Nonna is from Italy on my fathers side.');
-  alert('Yes! My Oma is from holland on my moms side. My Nonna is from Italy on my fathers side.');
-  score++;
+  if (likesHeritage === 'yes' || likesHeritage === 'y') {
+    //console.log('Yes, My Oma is from holland on my moms side. My Nonna is from Italy on my fathers side.');
+    alert('Yes! My Oma is from holland on my moms side. My Nonna is from Italy on my fathers side.');
+    score++;
+  }
+  else if (likesHeritage === 'no' || likesHeritage === 'n') {
+    //console.log('That is incorrect');
+    alert('No that is incorrect.');
+  }
 }
-else if (likesHeritage === 'no' || likesHeritage === 'n') {
-  //console.log('That is incorrect');
-  alert('No that is incorrect.');
-}
+
+family();
+
+
+
 
 let myFavColors = ['blue', 'gold', 'black', 'red'];
 
