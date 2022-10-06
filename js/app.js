@@ -23,20 +23,26 @@ let userName = prompt('What is your name?');
 console.log(userName);
 alert('Hello ' + userName + '!');
 
-let likesCooking = prompt('Do I like to cook?');
-console.log(likesCooking);
+function cooking(){
 
-let cookingResposeLower = likesCooking.toLowerCase();
+  let likesCooking = prompt('Do I like to cook?');
+  console.log(likesCooking);
+  
+  let cookingResposeLower = likesCooking.toLowerCase();
+  
+  if (cookingResposeLower === 'yes' || cookingResposeLower === 'y') {
+    console.log('Yes, I LOOOOVE cooking! It is my love language!');
+    alert('Yes, I LOOOOVE cooking! It is my love language!');
+    score++;
+  }
+  else if (cookingResposeLower === 'no' || cookingResposeLower === 'n') {
+    console.log('That is incorrect');
+    alert('No that is incorrect.');
+  }
+}
 
-if (cookingResposeLower === 'yes' || cookingResposeLower === 'y') {
-  console.log('Yes, I LOOOOVE cooking! It is my love language!');
-  alert('Yes, I LOOOOVE cooking! It is my love language!');
-  score++;
-}
-else if (cookingResposeLower === 'no' || cookingResposeLower === 'n') {
-  console.log('That is incorrect');
-  alert('No that is incorrect.');
-}
+cooking();
+
 
 let likesCompeting = prompt('Did I compete in Archery?');
 console.log(likesCompeting);
