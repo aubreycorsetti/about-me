@@ -13,9 +13,8 @@ h1 {
     margin-left: 150px;
     margin-right: 150px;
     font-family: "lucida" sans;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 60px;
+    background-color: rgb(128,128,128,.5);
 }
 
 h2 {

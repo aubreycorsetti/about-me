@@ -76,7 +76,7 @@ let likesLuggage = likesDesign.toLowerCase();
 
 if (likesLuggage === 'yes' || likesLuggage === 'y') {
   //console.log('Yes, I am currently working on getting a prototype.');
-  alert('Yes, I am');
+  alert('Yes, I am currently working on getting a proto-type made.');
   score++;
 }
 else if (likesLuggage === 'no' || likesLuggage === 'n') {
@@ -91,7 +91,7 @@ let likesHeritage = likesFamily.toLowerCase();
 
 if (likesHeritage === 'yes' || likesHeritage === 'y') {
   //console.log('Yes, My Oma is from holland on my moms side. My Nonna is from Italy on my fathers side.');
-  alert('Yes, I am');
+  alert('Yes! My Oma is from holland on my moms side. My Nonna is from Italy on my fathers side.');
   score++;
 }
 else if (likesHeritage === 'no' || likesHeritage === 'n') {
