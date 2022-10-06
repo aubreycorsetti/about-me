@@ -121,28 +121,32 @@ function family() {
 
 family();
 
+function color() {
 
+  let myFavColors = ['blue', 'gold', 'black', 'red'];
 
+  let attemptsRemaining = 7;
 
-let myFavColors = ['blue', 'gold', 'black', 'red'];
-
-let attemptsRemaining = 7;
-
-while (attemptsRemaining) {
-  let userGuess = prompt('What\'s my favorite color?');
-  attemptsRemaining--;
-  for (let i = 0; i < myFavColors.length; i++) {
-    if (userGuess === myFavColors[i]) {
-      alert('You are correct. The correct possible answers are blue, gold, black and red.');
-      score++;
-      attemptsRemaining = 0;
+  while (attemptsRemaining) {
+    let userGuess = prompt('What\'s my favorite color?');
+    attemptsRemaining--;
+    for (let i = 0; i < myFavColors.length; i++) {
+      if (userGuess === myFavColors[i]) {
+        alert('You are correct. The correct possible answers are blue, gold, black and red.');
+        score++;
+        attemptsRemaining = 0;
+      }
+    }
+    if (attemptsRemaining) {
+      alert(`You have ${attemptsRemaining} attempts remaining.`);
     }
   }
-  if (attemptsRemaining) {
-    alert(`You have ${attemptsRemaining} attempts remaining.`);
-  }
 }
-console.log('score ', score);
+
+color();
+
+// console.log('score ', score);
+
 
 let myNumber = '8';
 
